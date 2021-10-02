@@ -1,0 +1,15 @@
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/BookHomework/bin/Debug/net5.0/BookHomework.deps.json
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/BookHomework/bin/Debug/net5.0/BookHomework.runtimeconfig.json
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/BookHomework/bin/Debug/net5.0/BookHomework.runtimeconfig.dev.json
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/BookHomework/bin/Debug/net5.0/BookHomework.dll
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/BookHomework/bin/Debug/net5.0/ref/BookHomework.dll
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/BookHomework/bin/Debug/net5.0/BookHomework.pdb
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/BookHomework/obj/Debug/net5.0/BookHomework.csproj.AssemblyReference.cache
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/BookHomework/obj/Debug/net5.0/BookHomework.GeneratedMSBuildEditorConfig.editorconfig
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/BookHomework/obj/Debug/net5.0/BookHomework.AssemblyInfoInputs.cache
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/BookHomework/obj/Debug/net5.0/BookHomework.AssemblyInfo.cs
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/BookHomework/obj/Debug/net5.0/BookHomework.csproj.CoreCompileInputs.cache
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/BookHomework/obj/Debug/net5.0/BookHomework.dll
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/BookHomework/obj/Debug/net5.0/ref/BookHomework.dll
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/BookHomework/obj/Debug/net5.0/BookHomework.pdb
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/BookHomework/obj/Debug/net5.0/BookHomework.genruntimeconfig.cache
