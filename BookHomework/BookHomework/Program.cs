@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using System.Diagnostics;
 using System.IO;
 using System.Collections.Generic;
 
@@ -39,6 +38,30 @@ namespace BookHomework
             return sumOfChars / words.Count();
         }
 
+        static void FiveMostCommonWords(List<string> words)
+        {
+            List<string> FiveMostCommonWords = new List<string>();
+            FiveMostCommonWords = words.GroupBy(x => x)
+                .OrderByDescending(x => x.Count())
+                .Select(x => x.Key)
+                .Take(5)
+                .ToList();
+
+            Console.WriteLine(String.Join(", ",FiveMostCommonWords));
+        }
+
+        static void FiveLeastCommonWords(List<string> words)
+        {
+            List<string> FiveLeastCommonWods = new List<string>();
+            FiveLeastCommonWods = words.GroupBy(x => x)
+                .OrderBy(x => x.Count())
+                .Select(x => x.Key)
+                .Take(5)
+                .ToList();
+
+            Console.WriteLine(String.Join(", ", FiveLeastCommonWods));
+        }
+
         static void Main(string[] args)
         {
             #region WordsToList
@@ -64,23 +87,16 @@ namespace BookHomework
 
             #endregion
 
-            #region RemoveRepetitions
-
-            words = words.Distinct().ToList();
-
-            #endregion
-
-            /*
-            foreach (var word in words)
-            {                
-                Console.WriteLine(word);
-            }
-            */
+            #region PrintResults
 
             Console.WriteLine("Count of words is: " + CountOfWords(words));
             Console.WriteLine("The shortest word is: " + ShortestWord(words));
             Console.WriteLine("The longest word is: " + LongestWord(words));
             Console.WriteLine("Average word length is: " + AverageWordLenght(words));
+            FiveMostCommonWords(words);
+            FiveLeastCommonWords(words);
+
+            #endregion
         }
     }
 }
