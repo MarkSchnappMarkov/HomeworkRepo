@@ -1,8 +1,7 @@
-﻿<Properties StartupConfiguration="{A75F329F-B553-4D08-8687-48B6E0BF0CDE}|Default">
-  <MonoDevelop.Ide.Workbench>
+﻿<Properties StartupConfiguration="{BD85F810-5A74-4201-BA22-2396C65945C9}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MultiThreadedBook/Program.cs">
     <Files>
-      <File FileName="BookHomework/Program.cs" Line="66" Column="10" />
-      <File FileName="MultiThreadedBook/Program.cs" Line="1" Column="1" />
+      <File FileName="MultiThreadedBook/Program.cs" Line="91" Column="55" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,7 +16,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.MultiThreadedBook FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.MultiThreadedBook PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.BookHomework PreferredExecutionTarget="MonoDevelop.Default" />
