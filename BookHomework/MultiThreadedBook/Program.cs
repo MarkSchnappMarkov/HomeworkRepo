@@ -3,6 +3,7 @@ using System.Linq;
 using System.IO;
 using System.Collections.Generic;
 using System.Threading;
+using System.Diagnostics;
 
 namespace MultiThreadedBook
 {
@@ -180,6 +181,10 @@ namespace MultiThreadedBook
 
         static void Main(string[] args)
         {
+            Stopwatch watch = new Stopwatch();
+
+            watch.Start();
+
             threads = new List<Thread>();
             threads.Add(new Thread(() => CountOfWords(filename)));
             threads.Add(new Thread(() => ShortestWord(filename)));
@@ -191,6 +196,10 @@ namespace MultiThreadedBook
             foreach (var thread in threads) thread.Start();
 
             foreach (var thread in threads) thread.Join();
+
+            watch.Stop();
+
+            Console.WriteLine($"Elapsed time = {watch.ElapsedMilliseconds} milliseconds");
         }
     }
 }

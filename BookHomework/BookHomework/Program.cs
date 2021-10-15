@@ -2,6 +2,7 @@
 using System.Linq;
 using System.IO;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace BookHomework
 {
@@ -64,6 +65,10 @@ namespace BookHomework
 
         static void Main(string[] args)
         {
+            Stopwatch watch = new Stopwatch();
+
+            watch.Start();
+
             #region WordsToList
 
             string filename = @"Book.txt";
@@ -97,6 +102,10 @@ namespace BookHomework
             FiveLeastCommonWords(words);
 
             #endregion
+
+            watch.Stop();
+
+            Console.WriteLine($"Elapsed time = {watch.Elapsed}");
         }
     }
 }
