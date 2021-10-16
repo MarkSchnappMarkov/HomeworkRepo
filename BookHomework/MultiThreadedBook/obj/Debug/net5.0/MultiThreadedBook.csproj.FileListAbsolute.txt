@@ -12,3 +12,4 @@
 /Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/MultiThreadedBook/obj/Debug/net5.0/ref/MultiThreadedBook.dll
 /Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/MultiThreadedBook/obj/Debug/net5.0/MultiThreadedBook.pdb
 /Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/MultiThreadedBook/obj/Debug/net5.0/MultiThreadedBook.genruntimeconfig.cache
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/MultiThreadedBook/obj/Debug/net5.0/MultiThreadedBook.csproj.AssemblyReference.cache

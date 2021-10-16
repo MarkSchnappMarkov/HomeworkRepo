@@ -9,107 +9,31 @@ namespace MultiThreadedBook
 {
     class Program
     {
-        private static string filename = @"Book.txt";
+        private static string filename { get; set; }
 
-        private static List<Thread> threads { get; set; }
-
-        static void CountOfWords(string filename)
+        static void CountOfWords(List<string> words)
         {
-            #region getAndReadText
-
-            List<string> words = new List<string>();
-            var threads = new List<Thread>();
-            char[] delims = { '.', '!', '?', ',', '(', ')', '\t', '\n', '\r', ' ' };
-
-            using (var reader = new StreamReader(filename))
-            {
-                while (!reader.EndOfStream)
-                {
-                    var line = reader.ReadLine();
-                    words.AddRange(line.Split(delims, StringSplitOptions.RemoveEmptyEntries));
-                }
-            }
-
             words = words.ConvertAll(d => d.ToLower());
-
-            #endregion
 
             Console.WriteLine($"The count of words is {words.Count()}");
         }
 
-        static void ShortestWord(string filename)
+        static void ShortestWord(List<string> words)
         {
-            #region getAndReadText
-
-            List<string> words = new List<string>();
-            var threads = new List<Thread>();
-            char[] delims = { '.', '!', '?', ',', '(', ')', '\t', '\n', '\r', ' ' };
-
-            using (var reader = new StreamReader(filename))
-            {
-                while (!reader.EndOfStream)
-                {
-                    var line = reader.ReadLine();
-                    words.AddRange(line.Split(delims, StringSplitOptions.RemoveEmptyEntries));
-                }
-            }
-
-            words = words.ConvertAll(d => d.ToLower());
-
-            #endregion
-
             var sortedList = words.OrderBy(x => x.Length);
 
             Console.WriteLine($"The shortest word is: {sortedList.FirstOrDefault()}");
         }
 
-        static void LongestWord(string filename)
+        static void LongestWord(List<string> words)
         {
-            #region getAndReadText
-
-            List<string> words = new List<string>();
-            var threads = new List<Thread>();
-            char[] delims = { '.', '!', '?', ',', '(', ')', '\t', '\n', '\r', ' ' };
-
-            using (var reader = new StreamReader(filename))
-            {
-                while (!reader.EndOfStream)
-                {
-                    var line = reader.ReadLine();
-                    words.AddRange(line.Split(delims, StringSplitOptions.RemoveEmptyEntries));
-                }
-            }
-
-            words = words.ConvertAll(d => d.ToLower());
-
-            #endregion
-
             var sortedList = words.OrderBy(x => x.Length);
 
             Console.WriteLine($"The longest words is: {sortedList.LastOrDefault()}");
         }
 
-        static void AverageWordLenght(string filename)
-        {
-            #region getAndReadText
-
-            List<string> words = new List<string>();
-            var threads = new List<Thread>();
-            char[] delims = { '.', '!', '?', ',', '(', ')', '\t', '\n', '\r', ' ' };
-
-            using (var reader = new StreamReader(filename))
-            {
-                while (!reader.EndOfStream)
-                {
-                    var line = reader.ReadLine();
-                    words.AddRange(line.Split(delims, StringSplitOptions.RemoveEmptyEntries));
-                }
-            }
-
-            words = words.ConvertAll(d => d.ToLower());
-
-            #endregion
-
+        static void AverageWordLenght(List<string> words)
+        {          
             int sumOfChars = 0;
 
             foreach (var word in words) sumOfChars += word.Length;
@@ -117,27 +41,8 @@ namespace MultiThreadedBook
             Console.WriteLine($"The average word length is: {sumOfChars / words.Count()}");
         }
 
-        static void FiveMostCommonWords(string filename)
+        static void FiveMostCommonWords(List<string> words)
         {
-            #region getAndReadText
-
-            List<string> words = new List<string>();
-            var threads = new List<Thread>();
-            char[] delims = { '.', '!', '?', ',', '(', ')', '\t', '\n', '\r', ' ' };
-
-            using (var reader = new StreamReader(filename))
-            {
-                while (!reader.EndOfStream)
-                {
-                    var line = reader.ReadLine();
-                    words.AddRange(line.Split(delims, StringSplitOptions.RemoveEmptyEntries));
-                }
-            }
-
-            words = words.ConvertAll(d => d.ToLower());
-
-            #endregion
-
             List<string> FiveMostCommonWords = new List<string>();
             FiveMostCommonWords = words.GroupBy(x => x)
                 .OrderByDescending(x => x.Count())
@@ -148,27 +53,8 @@ namespace MultiThreadedBook
             Console.WriteLine($"The five most common words are: {String.Join(", ", FiveMostCommonWords)}");
         }
 
-        static void FiveLeastCommonWords(string filename)
+        static void FiveLeastCommonWords(List<string> words)
         {
-            #region getAndReadText
-
-            List<string> words = new List<string>();
-            var threads = new List<Thread>();
-            char[] delims = { '.', '!', '?', ',', '(', ')', '\t', '\n', '\r', ' ' };
-
-            using (var reader = new StreamReader(filename))
-            {
-                while (!reader.EndOfStream)
-                {
-                    var line = reader.ReadLine();
-                    words.AddRange(line.Split(delims, StringSplitOptions.RemoveEmptyEntries));
-                }
-            }
-
-            words = words.ConvertAll(d => d.ToLower());
-
-            #endregion
-
             List<string> FiveLeastCommonWods = new List<string>();
             FiveLeastCommonWods = words.GroupBy(x => x)
                 .OrderBy(x => x.Count())
@@ -182,23 +68,42 @@ namespace MultiThreadedBook
         static void Main(string[] args)
         {
             Stopwatch watch = new Stopwatch();
-
             watch.Start();
 
-            threads = new List<Thread>();
-            threads.Add(new Thread(() => CountOfWords(filename)));
-            threads.Add(new Thread(() => ShortestWord(filename)));
-            threads.Add(new Thread(() => LongestWord(filename)));
-            threads.Add(new Thread(() => AverageWordLenght(filename)));
-            threads.Add(new Thread(() => FiveMostCommonWords(filename)));
-            threads.Add(new Thread(() => FiveLeastCommonWords(filename)));
+            filename = @"Book.txt";
+            List<string> words = new List<string>();
+            char[] delims = { '.', '!', '?', ',', '(', ')', '\t', '\n', '\r', ' ' };
 
-            foreach (var thread in threads) thread.Start();
+            using (var reader = new StreamReader(filename))
+            {
+                while (!reader.EndOfStream)
+                {
+                    var line = reader.ReadLine();
+                    words.AddRange(line.Split(delims, StringSplitOptions.RemoveEmptyEntries));
+                }
+            }
 
-            foreach (var thread in threads) thread.Join();
+            words = words.ConvertAll(d => d.ToLower());
+
+            Thread[] threads = new Thread[6];
+            threads[0] = new Thread(() => CountOfWords(words));
+            threads[1] = new Thread(() => ShortestWord(words));
+            threads[2] = new Thread(() => LongestWord(words));
+            threads[3] = new Thread(() => AverageWordLenght(words));
+            threads[4] = new Thread(() => FiveMostCommonWords(words));
+            threads[5] = new Thread(() => FiveLeastCommonWords(words));
+
+            for (int i = 0; i < threads.Count(); i++)
+            {
+                threads[i].Start();
+            }
+
+            for (int i = 0; i < threads.Count(); i++)
+            {
+                threads[i].Join();
+            }
 
             watch.Stop();
-
             Console.WriteLine($"Elapsed time = {watch.ElapsedMilliseconds} milliseconds");
         }
     }
