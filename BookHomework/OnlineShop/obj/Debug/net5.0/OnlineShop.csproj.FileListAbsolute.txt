@@ -1,0 +1,15 @@
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/OnlineShop/bin/Debug/net5.0/OnlineShop.deps.json
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/OnlineShop/bin/Debug/net5.0/OnlineShop.runtimeconfig.json
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/OnlineShop/bin/Debug/net5.0/OnlineShop.runtimeconfig.dev.json
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/OnlineShop/bin/Debug/net5.0/OnlineShop.dll
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/OnlineShop/bin/Debug/net5.0/ref/OnlineShop.dll
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/OnlineShop/bin/Debug/net5.0/OnlineShop.pdb
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/OnlineShop/obj/Debug/net5.0/OnlineShop.csproj.AssemblyReference.cache
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/OnlineShop/obj/Debug/net5.0/OnlineShop.GeneratedMSBuildEditorConfig.editorconfig
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/OnlineShop/obj/Debug/net5.0/OnlineShop.AssemblyInfoInputs.cache
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/OnlineShop/obj/Debug/net5.0/OnlineShop.AssemblyInfo.cs
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/OnlineShop/obj/Debug/net5.0/OnlineShop.csproj.CoreCompileInputs.cache
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/OnlineShop/obj/Debug/net5.0/OnlineShop.dll
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/OnlineShop/obj/Debug/net5.0/ref/OnlineShop.dll
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/OnlineShop/obj/Debug/net5.0/OnlineShop.pdb
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/BookHomework/OnlineShop/obj/Debug/net5.0/OnlineShop.genruntimeconfig.cache
