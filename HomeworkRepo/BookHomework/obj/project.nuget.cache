@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "KXOm4moKWjX/uAFgmXnbnC+S+ptQnhtH85j9TEN8+CvPr59PxorYPSgIwJzqlW3n3qEOmwoFJ1bNiuqPEIeefg==",
+  "success": true,
+  "projectFilePath": "/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/BookHomework/BookHomework.csproj",
+  "expectedPackageFiles": [
+    "/Users/markmarkov/.nuget/packages/microsoft.netcore.app.host.osx-x64/5.0.9/microsoft.netcore.app.host.osx-x64.5.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{528D7AC5-3B52-4665-BEF2-FE2C356D6FB3}|Default">
+  <MonoDevelop.Ide.ItemProperties.OnlineShop PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MultiThreadedBook/Program.cs">
+    <Files>
+      <File FileName="OnlineShop/Program.cs" Line="8" Column="31" />
+      <File FileName="OnlineShop/Supplier.cs" />
+      <File FileName="OnlineShop/Shop.cs" />
+      <File FileName="OnlineShop/Item.cs" />
+      <File FileName="OnlineShop/Buyer.cs" Line="1" Column="1" />
+      <File FileName="MultiThreadedBook/Program.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Homework" expanded="True">
+            <Node name="BookHomework" expanded="True" />
+            <Node name="MultiThreadedBook" expanded="True" />
+            <Node name="OnlineShop" expanded="True" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.MultiThreadedBook PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.BookHomework PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
