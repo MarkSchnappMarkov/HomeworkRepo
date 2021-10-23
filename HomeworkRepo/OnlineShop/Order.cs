@@ -7,9 +7,10 @@ namespace OnlineShop
     {
         public int OrderNumber { get; set; }
         public List<Item> OrderedItems { get; set; }
-
-        public Order()
+        
+        public Order(int ordNum, List<Item> itemsToBuy)
         {
+            OrderNumber = ordNum;
             OrderedItems = new List<Item>();
         }
     }
