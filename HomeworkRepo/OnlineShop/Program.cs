@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace OnlineShop
@@ -13,37 +14,37 @@ namespace OnlineShop
         static void Main(string[] args)
         {
             Stopwatch watch = new Stopwatch();
-
             watch.Start();
 
             Shop shop = new Shop();
-
-            Task first = new Task(shop.LaunchTheStore);
-            first.Start();
+            shop.MakeTheShopReadyToOpen(shop); 
 
             //fan out
-            first.Wait();
-
             List<Task> taskList = new List<Task>();
 
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i <= 49; i++)
+            {
+                taskList.Add(Task.Run(() =>
+                {
+                    shop.Buyers.ElementAt(i).CreateAndSendOrder(shop);
+                }));
+            }
+
+            for (int i = 1; i <= 3; i++)
             {
                 taskList.Add(Task.Run(() =>
                 {
                     shop.Suppliers.ElementAt(i).LoadItemsToStorage(shop);
                 }));
             }
-
-            shop.ListAvaliableItems();
-
-            for (int i = 0; i < 50; i++)
-            {
-                shop.Buyers.ElementAt(i).CreateAndSendOrder(shop);
-            }
+            //fan in
+            var closeTask = Task.WhenAll(taskList);
+            var final = closeTask.ContinueWith(prev => shop.BuyReport(shop));
+            final.Wait();
 
             watch.Stop();
-
             Console.WriteLine(watch.ElapsedMilliseconds);
         }
+
     }
 }

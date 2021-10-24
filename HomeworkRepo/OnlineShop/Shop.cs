@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace OnlineShop
 {
@@ -52,9 +53,44 @@ namespace OnlineShop
             Storage.GroupBy(x => x.Name);
             foreach (var item in Storage)
             {
-                Console.WriteLine($"{item.Name}, quantity: {item.Quantity}");
+                Console.WriteLine($"{item.Name}, price {item.Price} , quantity: {item.Quantity}");
             }
             Console.WriteLine();
+        }
+
+        public void BuyReport(Shop shop)
+        {
+            /*
+            foreach (var buyer in shop.Buyers)
+            {
+                if (buyer.ShoppingList.Capacity != 0)
+                {
+                    Console.WriteLine($"Buyer {buyer.Id} with {buyer.Cash} cash is buying: ");
+                    foreach (var item in buyer.ShoppingList)
+                    {
+                        Console.WriteLine($"{item.Name}, quantity: {item.Quantity}, BILL: {item.Quantity * item.Price}");
+                    }
+                }        
+            }
+            */
+
+            Console.WriteLine("Orders made: ");
+            foreach (var order in Orders)
+            {
+                foreach (var item in order.OrderedItems)
+                {
+                    Console.WriteLine($"{item.Name}, price: {item.Price}, quantity: {item.Quantity}");
+                }
+            }
+        }
+
+        public void MakeTheShopReadyToOpen(Shop shop)
+        {
+            Task first = new Task(shop.LaunchTheStore);
+            Task second = first.ContinueWith(prev => shop.Suppliers.ElementAt(0).LoadItemsToStorage(shop));
+            Task third = second.ContinueWith(prev => shop.ListAvaliableItems());
+            first.Start();
+            third.Wait();
         }
     }
 }

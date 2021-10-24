@@ -5,13 +5,17 @@ namespace OnlineShop
 {
     public class Order
     {
-        public int OrderNumber { get; set; }
         public List<Item> OrderedItems { get; set; }
+        public double Bill { get; set; }
         
-        public Order(int ordNum, List<Item> itemsToBuy)
+        public Order(List<Item> items)
         {
-            OrderNumber = ordNum;
-            OrderedItems = new List<Item>();
+            OrderedItems = items;
+
+            foreach (var item in items)
+            {
+                Bill += item.Price * item.Quantity;
+            }
         }
     }
 }

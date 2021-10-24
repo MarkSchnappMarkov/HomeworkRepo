@@ -1,13 +1,7 @@
 ﻿<Properties StartupConfiguration="{528D7AC5-3B52-4665-BEF2-FE2C356D6FB3}|Default">
   <MonoDevelop.Ide.ItemProperties.Test PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.OnlineShop PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="OnlineShop/Shop.cs">
-    <Files>
-      <File FileName="OnlineShop/Program.cs" Line="24" Column="35" />
-      <File FileName="OnlineShop/Shop.cs" Line="57" Column="1" />
-      <File FileName="OnlineShop/Supplier.cs" Line="23" Column="109" />
-      <File FileName="OnlineShop/Buyer.cs" Line="73" Column="14" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -15,14 +9,11 @@
             <Node name="BookHomework" expanded="True" />
             <Node name="MultiThreadedBook" expanded="True" />
             <Node name="OnlineShop" expanded="True">
-              <Node name="Shop.cs" selected="True" />
+              <Node name="Order.cs" selected="True" />
             </Node>
             <Node name="Test" expanded="True" />
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

@@ -6,7 +6,6 @@ namespace OnlineShop
 {
     public class Buyer : Shop
     {
-        public Shop Shop { get; set; }
         public int Id { get; set; }
         public double Cash { get; set; }
         public List<Item> ShoppingList { get; set; }
@@ -16,61 +15,55 @@ namespace OnlineShop
         {
             random = new Random();
             Id = id;
-            Cash = random.Next(10000, 100000);
+            Cash = random.Next(2000, 50000);
             ShoppingList = new List<Item>();
         }
 
         public void CreateAndSendOrder(Shop shop)
         {
-            Shop = shop;
-            Random rand = new Random();
             double wantedItemsCost = 0;
-            List<Item> planningToBuy = new List<Item>();
+            int wantedQuantity = random.Next(1, 5);
 
-            for (int i = 0; i < rand.Next(1,10); i++)
+            List<Item> wantedItems = shop.Storage.OrderBy(x => random.Next()).Take(random.Next(1, 10)).ToList();
+
+            foreach (var item in wantedItems)
             {
-                Item wantedItem = shop.Storage.ElementAt(i);
-                int wantedQuantity = rand.Next(1, 10);           
-                
-                if (IsItemAvaliable(shop, wantedItem, wantedQuantity))
+                wantedItemsCost += item.Price * wantedQuantity;
+
+                if (HaveEnoughCash(wantedItemsCost))
                 {
-                    wantedItemsCost += wantedItem.Price;
-                    wantedItem.Quantity = wantedQuantity;
-                    planningToBuy.Add(wantedItem);
+                    if (IsItemAvaliable(shop, item, wantedQuantity))
+                    {
+                        item.Quantity = wantedQuantity;
+                        ShoppingList.Add(item);
+                        shop.Storage.Find(x => x.Name == item.Name).Quantity -= wantedQuantity;
+                    }
+                    else
+                    {
+                        continue;
+                    }
                 }
                 else
                 {
-                    planningToBuy.Remove(wantedItem); //removing the wanted item because its unable to be bought
+                    continue;
                 }
             }
 
-            if (wantedItemsCost <= Cash) // if the buyer has enough money to bu ywanted items
-            {
-                ShoppingList = planningToBuy;
-            }
-            else
-            {
-                Console.WriteLine("not enough money to buy what i want");
-            }
-
-            Order order = new Order(OrdersCount++, ShoppingList);
-            OrdersCount++;
-            order.OrderedItems = ShoppingList;
+            Order order = new Order(ShoppingList);
             shop.Orders.Add(order);
+            shop.OrdersCount++;
+        }
 
-            if (ShoppingList.Capacity == 0)
+        public bool HaveEnoughCash(double bill)
+        {
+            if (bill <= Cash)
             {
-                Console.WriteLine($"Buyer number {Id} have empty shopping list \n");
+                return true;
             }
             else
             {
-                Console.WriteLine($"Buyer number {Id} with cash: {Cash} is buying :");
-                foreach (var item in order.OrderedItems)
-                {
-                    Console.WriteLine($"{item.Name}, price: {item.Price} leva, quantity: {item.Quantity}, Total: {item.Price * item.Quantity} leva");
-                }
-                Console.WriteLine();
-            }    
+                return false;
+            }
         }
     }
 }
