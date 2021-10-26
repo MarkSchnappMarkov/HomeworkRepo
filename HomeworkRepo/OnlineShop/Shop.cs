@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace OnlineShop
@@ -12,33 +13,37 @@ namespace OnlineShop
         public List<Buyer> Buyers { get; set; }
         public List<Supplier> Suppliers { get; set; }
         public int OrdersCount { get; set; }
+        private static object _locker = new object();
 
         public void LaunchTheStore()
         {
-            Storage = new List<Item>();
-            Orders = new List<Order>();
-            Buyers = new List<Buyer>();
-            Suppliers = new List<Supplier>();
-            OrdersCount = 0;
-
-            Console.WriteLine("Welcome to the best online shop! \n");
-
-            for (int i = 1; i <= 3; i++)
+            lock (_locker)
             {
-                Suppliers.Add(new Supplier(i));
-            }
+                Storage = new List<Item>();
+                Orders = new List<Order>();
+                Buyers = new List<Buyer>();
+                Suppliers = new List<Supplier>();
+                OrdersCount = 0;
 
-            for (int i = 1; i <= 50; i++)
-            {
-                Buyers.Add(new Buyer(i));
+                Console.WriteLine("Welcome to the best online shop! \n");
+
+                for (int i = 1; i <= 3; i++)
+                {
+                    Supplier supplier = new Supplier(i);
+                    Suppliers.Add(supplier);
+                }
+
+                for (int i = 1; i <= 50; i++)
+                {
+                    Buyer buyer = new Buyer(i);
+                    Buyers.Add(buyer);
+                }
             }
         }
 
         public bool IsItemAvaliable(Shop shop, Item item, int quantity)
         {
-            Item targetItem = shop.Storage.Find(x => x.Name == item.Name);
-
-            if (targetItem.Quantity >= quantity)
+            if (shop.Storage.Find(x => x.Name == item.Name).Quantity >= quantity)
             {
                 return true;
             }
@@ -59,8 +64,7 @@ namespace OnlineShop
         }
 
         public void BuyReport(Shop shop)
-        {
-            /*
+        {      
             foreach (var buyer in shop.Buyers)
             {
                 if (buyer.ShoppingList.Capacity != 0)
@@ -68,29 +72,10 @@ namespace OnlineShop
                     Console.WriteLine($"Buyer {buyer.Id} with {buyer.Cash} cash is buying: ");
                     foreach (var item in buyer.ShoppingList)
                     {
-                        Console.WriteLine($"{item.Name}, quantity: {item.Quantity}, BILL: {item.Quantity * item.Price}");
+                        Console.WriteLine($"{item.Name}, quantity: {item.Quantity}, BILL: {item.Quantity * item.Price} \n");
                     }
                 }        
-            }
-            */
-
-            Console.WriteLine("Orders made: ");
-            foreach (var order in Orders)
-            {
-                foreach (var item in order.OrderedItems)
-                {
-                    Console.WriteLine($"{item.Name}, price: {item.Price}, quantity: {item.Quantity}");
-                }
-            }
-        }
-
-        public void MakeTheShopReadyToOpen(Shop shop)
-        {
-            Task first = new Task(shop.LaunchTheStore);
-            Task second = first.ContinueWith(prev => shop.Suppliers.ElementAt(0).LoadItemsToStorage(shop));
-            Task third = second.ContinueWith(prev => shop.ListAvaliableItems());
-            first.Start();
-            third.Wait();
+            }     
         }
     }
 }

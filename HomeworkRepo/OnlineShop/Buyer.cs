@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 
 namespace OnlineShop
 {
@@ -10,60 +11,55 @@ namespace OnlineShop
         public double Cash { get; set; }
         public List<Item> ShoppingList { get; set; }
         public Random random { get; set; }
+        private static object _locker = new object();
 
         public Buyer(int id)
         {
             random = new Random();
             Id = id;
-            Cash = random.Next(2000, 50000);
+            Cash = random.Next(200, 1000);
             ShoppingList = new List<Item>();
         }
 
         public void CreateAndSendOrder(Shop shop)
         {
-            double wantedItemsCost = 0;
-            int wantedQuantity = random.Next(1, 5);
-
-            List<Item> wantedItems = shop.Storage.OrderBy(x => random.Next()).Take(random.Next(1, 10)).ToList();
-
-            foreach (var item in wantedItems)
+            lock (_locker)
             {
-                wantedItemsCost += item.Price * wantedQuantity;
+                double wantedItemsCost = 0;
+                int wantedQuantity = 0;
+                List<Item> wantedItems = shop.Storage.OrderBy(x => random.Next()).Take(random.Next(1, 7)).ToList();
 
-                if (HaveEnoughCash(wantedItemsCost))
+                foreach (var wanteditem in wantedItems)
                 {
-                    if (IsItemAvaliable(shop, item, wantedQuantity))
+                    wantedQuantity = random.Next(1, 5);
+                    wantedItemsCost += wanteditem.Price * wantedQuantity;
+
+                    if (HaveEnoughCash(wantedItemsCost))
                     {
-                        item.Quantity = wantedQuantity;
-                        ShoppingList.Add(item);
-                        shop.Storage.Find(x => x.Name == item.Name).Quantity -= wantedQuantity;
+                        if (IsItemAvaliable(shop, wanteditem, wantedQuantity))
+                        {
+                            Item item = new Item(wanteditem.Name, wanteditem.Price, wantedQuantity);
+                            ShoppingList.Add(item);
+                            shop.Storage.Find(x => x.Name == wanteditem.Name).Quantity -= wantedQuantity;
+                        }
+                        else
+                            continue;
                     }
                     else
-                    {
                         continue;
-                    }
                 }
-                else
-                {
-                    continue;
-                }
+                Order order = new Order(ShoppingList);
+                shop.Orders.Add(order);
+                shop.OrdersCount++;
             }
-
-            Order order = new Order(ShoppingList);
-            shop.Orders.Add(order);
-            shop.OrdersCount++;
         }
 
         public bool HaveEnoughCash(double bill)
         {
             if (bill <= Cash)
-            {
                 return true;
-            }
             else
-            {
                 return false;
-            }
         }
     }
 }
