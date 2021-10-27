@@ -29,7 +29,7 @@ namespace OnlineShop
 
                 for (int i = 1; i <= 3; i++)
                 {
-                    Supplier supplier = new Supplier(i);
+                    Supplier supplier = new Supplier();
                     Suppliers.Add(supplier);
                 }
 
@@ -55,27 +55,34 @@ namespace OnlineShop
 
         public void ListAvaliableItems()
         {
-            Storage.GroupBy(x => x.Name);
-            foreach (var item in Storage)
+            lock (_locker)
             {
-                Console.WriteLine($"{item.Name}, price {item.Price} , quantity: {item.Quantity}");
+                Storage.GroupBy(x => x.Name);
+                foreach (var item in Storage)
+                {
+                    Console.WriteLine($"{item.Name}, price {item.Price} , quantity: {item.Quantity}");
+                }
+                Console.WriteLine();
             }
-            Console.WriteLine();
         }
 
         public void BuyReport(Shop shop)
-        {      
-            foreach (var buyer in shop.Buyers)
+        {
+            lock (_locker)
             {
-                if (buyer.ShoppingList.Capacity != 0)
+                foreach (var buyer in shop.Buyers)
                 {
-                    Console.WriteLine($"Buyer {buyer.Id} with {buyer.Cash} cash is buying: ");
-                    foreach (var item in buyer.ShoppingList)
+                    if (buyer.ShoppingList.Capacity != 0)
                     {
-                        Console.WriteLine($"{item.Name}, quantity: {item.Quantity}, BILL: {item.Quantity * item.Price} \n");
+                        Console.WriteLine($"Buyer {buyer.Id} with {buyer.Cash} cash is buying: ");
+                        foreach (var item in buyer.ShoppingList)
+                        {
+                            Console.WriteLine($"{item.Name}, quantity: {item.Quantity}, BILL: {item.Quantity * item.Price}");
+                        }
+                        Console.WriteLine();
                     }
-                }        
-            }     
+                }
+            } 
         }
     }
 }

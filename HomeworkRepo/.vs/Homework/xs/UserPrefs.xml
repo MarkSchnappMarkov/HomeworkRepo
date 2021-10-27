@@ -1,12 +1,9 @@
 ﻿<Properties StartupConfiguration="{528D7AC5-3B52-4665-BEF2-FE2C356D6FB3}|Default">
   <MonoDevelop.Ide.ItemProperties.Test PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.OnlineShop PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="OnlineShop/Supplier.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="OnlineShop/Program.cs">
     <Files>
-      <File FileName="OnlineShop/Program.cs" Line="21" Column="60" />
-      <File FileName="OnlineShop/Shop.cs" Line="20" Column="36" />
-      <File FileName="OnlineShop/Buyer.cs" Line="56" Column="35" />
-      <File FileName="OnlineShop/Supplier.cs" Line="21" Column="1" />
+      <File FileName="OnlineShop/Program.cs" Line="39" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,7 +12,7 @@
             <Node name="BookHomework" expanded="True" />
             <Node name="MultiThreadedBook" expanded="True" />
             <Node name="OnlineShop" expanded="True">
-              <Node name="Supplier.cs" selected="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
             <Node name="Test" expanded="True" />
           </Node>
@@ -28,7 +25,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.BookHomework PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/OnlineShop/Buyer.cs" relfile="OnlineShop/Buyer.cs" line="25" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

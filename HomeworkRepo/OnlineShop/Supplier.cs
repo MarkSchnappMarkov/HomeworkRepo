@@ -7,13 +7,7 @@ namespace OnlineShop
 {
     public class Supplier : Shop
     {
-        public int Id { get; set; }
         private static object _locker = new object();
-
-        public Supplier(int id)
-        {
-            Id = id;
-        }
 
         public void LoadItemsToStorage(Shop shop)
         {
