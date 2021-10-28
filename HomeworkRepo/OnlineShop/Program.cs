@@ -24,16 +24,19 @@ namespace OnlineShop
             first.Join();
 
             for (int i = 0; i < 2; i++)
-                SupplierThreads.Add(new Thread(() => shop.Suppliers.ElementAt(i).LoadItemsToStorage(shop)));
-
-
-            foreach (var thread in SupplierThreads) thread.Start();
+            {
+                Thread thread = new Thread(() => shop.Suppliers.ElementAt(i).LoadItemsToStorage(shop));
+                thread.Start();
+                SupplierThreads.Add(thread);              
+            }
             foreach (var thread in SupplierThreads) thread.Join();
 
             for (int i = 0; i < 49; i++)
-                BuyerThreads.Add(new Thread(() => shop.Buyers.ElementAt(i).CreateAndSendOrder(shop)));
-
-            foreach (var thread in BuyerThreads) thread.Start();
+            {
+                Thread thread = new Thread(() => shop.Buyers.ElementAt(i).CreateAndSendOrder(shop));
+                thread.Start();
+                BuyerThreads.Add(thread);
+            }
             foreach (var thread in BuyerThreads) thread.Join();
 
             Thread last = new Thread(() => shop.BuyReport(shop));

@@ -3,7 +3,7 @@
   <MonoDevelop.Ide.ItemProperties.OnlineShop PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="OnlineShop/Program.cs">
     <Files>
-      <File FileName="OnlineShop/Program.cs" Line="39" Column="1" />
+      <File FileName="OnlineShop/Program.cs" Line="32" Column="13" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -25,9 +25,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.BookHomework PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/OnlineShop/Buyer.cs" relfile="OnlineShop/Buyer.cs" line="25" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

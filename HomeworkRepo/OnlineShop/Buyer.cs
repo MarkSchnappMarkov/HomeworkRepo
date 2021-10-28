@@ -27,7 +27,7 @@ namespace OnlineShop
             {
                 double wantedItemsCost = 0;
                 int wantedQuantity = 0;
-                List<Item> wantedItems = shop.Storage.OrderBy(x => random.Next()).Take(random.Next(1, 7)).ToList();
+                List<Item> wantedItems = shop.Storage.OrderBy(x => random.Next()).Take(random.Next(1, 10)).ToList();
 
                 foreach (var wanteditem in wantedItems)
                 {
