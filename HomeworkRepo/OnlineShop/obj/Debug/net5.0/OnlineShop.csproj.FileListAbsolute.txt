@@ -28,3 +28,4 @@
 /Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/OnlineShop/obj/Debug/net5.0/ref/OnlineShop.dll
 /Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/OnlineShop/obj/Debug/net5.0/OnlineShop.pdb
 /Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/OnlineShop/obj/Debug/net5.0/OnlineShop.genruntimeconfig.cache
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/OnlineShop/bin/Debug/net5.0/OnlineShop

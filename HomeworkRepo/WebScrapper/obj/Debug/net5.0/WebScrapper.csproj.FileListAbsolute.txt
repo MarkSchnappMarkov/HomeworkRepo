@@ -16,3 +16,4 @@
 /Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/WebScrapper/obj/Debug/net5.0/ref/WebScrapper.dll
 /Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/WebScrapper/obj/Debug/net5.0/WebScrapper.pdb
 /Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/WebScrapper/obj/Debug/net5.0/WebScrapper.genruntimeconfig.cache
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/WebScrapper/bin/Debug/net5.0/WebScrapper

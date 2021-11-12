@@ -28,3 +28,4 @@
 /Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/BookHomework/obj/Debug/net5.0/ref/BookHomework.dll
 /Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/BookHomework/obj/Debug/net5.0/BookHomework.pdb
 /Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/BookHomework/obj/Debug/net5.0/BookHomework.genruntimeconfig.cache
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/BookHomework/bin/Debug/net5.0/BookHomework

@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "73wbeQ+UxlyAd1oOEZILo7ZK04lffmwyc2i6DitnaOspI9igqDCs+aCMUWXclySJcBRYapVFC3teaaTsGQxFJw==",
+  "dgSpecHash": "YbrhAh67j0GFOdrJkZqys5v1ZvkSXJ/Yu4VK2B4ZBs6izi5Z5VDB5Lsrs4v81q0vYwEPG+tmvlAWNAE70B3rwg==",
   "success": true,
   "projectFilePath": "/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/MultiThreadedBook/MultiThreadedBook.csproj",
   "expectedPackageFiles": [
-    "/Users/markmarkov/.nuget/packages/microsoft.netcore.app.host.osx-x64/5.0.9/microsoft.netcore.app.host.osx-x64.5.0.9.nupkg.sha512"
+    "/Users/markmarkov/.nuget/packages/microsoft.aspnetcore.app.ref/5.0.0/microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "/Users/markmarkov/.nuget/packages/microsoft.netcore.app.host.osx-x64/5.0.12/microsoft.netcore.app.host.osx-x64.5.0.12.nupkg.sha512",
+    "/Users/markmarkov/.nuget/packages/microsoft.netcore.app.ref/5.0.0/microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

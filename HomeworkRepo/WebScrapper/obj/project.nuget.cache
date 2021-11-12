@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "jVNL3IVtQTMAlh5NiAVx6blK+bhKQAf0B72kzmSWigAwZSNRfONnoKI8keVyiczKkPL3eZO2dipbQf5SSZo6wA==",
+  "dgSpecHash": "Td2gKVConMZU7MCyyq9d8sQ6mwc6zC4S4yS6+vaev2KiAXSlQ2qTW4fEdQz4HyXWQ/JrMRi5EMyWI5k1Rh/ipA==",
   "success": true,
   "projectFilePath": "/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/WebScrapper/WebScrapper.csproj",
   "expectedPackageFiles": [
     "/Users/markmarkov/.nuget/packages/csvhelper/27.1.1/csvhelper.27.1.1.nupkg.sha512",
-    "/Users/markmarkov/.nuget/packages/htmlagilitypack/1.11.37/htmlagilitypack.1.11.37.nupkg.sha512",
-    "/Users/markmarkov/.nuget/packages/microsoft.netcore.app.host.osx-x64/5.0.9/microsoft.netcore.app.host.osx-x64.5.0.9.nupkg.sha512"
+    "/Users/markmarkov/.nuget/packages/htmlagilitypack/1.11.38/htmlagilitypack.1.11.38.nupkg.sha512",
+    "/Users/markmarkov/.nuget/packages/microsoft.aspnetcore.app.ref/5.0.0/microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "/Users/markmarkov/.nuget/packages/microsoft.netcore.app.host.osx-x64/5.0.12/microsoft.netcore.app.host.osx-x64.5.0.12.nupkg.sha512",
+    "/Users/markmarkov/.nuget/packages/microsoft.netcore.app.ref/5.0.0/microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
