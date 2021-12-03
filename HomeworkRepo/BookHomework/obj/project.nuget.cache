@@ -1,12 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "axjckojT89g5CIxeOji649OTc265A9MRpMpYq6iG3UvWrlYE93nGjI95xfEganvecik4pGzhCo9fi89fXtZuiw==",
+  "dgSpecHash": "hMRcdn79GhL9fiOuwSkaJXw2b6er7oaS4hDf+rOnJprHAVKb0w1V6JZTpN5zqhJdi1yf34GP9K2J5UtACqFOoA==",
   "success": true,
   "projectFilePath": "/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/BookHomework/BookHomework.csproj",
   "expectedPackageFiles": [
-    "/Users/markmarkov/.nuget/packages/microsoft.aspnetcore.app.ref/5.0.0/microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "/Users/markmarkov/.nuget/packages/microsoft.netcore.app.host.osx-x64/5.0.12/microsoft.netcore.app.host.osx-x64.5.0.12.nupkg.sha512",
-    "/Users/markmarkov/.nuget/packages/microsoft.netcore.app.ref/5.0.0/microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+    "/Users/markmarkov/.nuget/packages/microsoft.netcore.app.host.osx-x64/5.0.12/microsoft.netcore.app.host.osx-x64.5.0.12.nupkg.sha512"
   ],
   "logs": []
 }

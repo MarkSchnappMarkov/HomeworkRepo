@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/Users/markmarkov/.dotnet/store/|arch|/|tfm|",
+      "/Users/markmarkov/.nuget/packages"
+    ]
+  }
+}

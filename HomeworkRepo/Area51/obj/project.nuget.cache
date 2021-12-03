@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Fg+t6u2dgH21McKZLX/CWX8d7wzZ54g3jSRJT0jEEHI2xfNeTAEcHAfn7et4uV0v3/C5NWsPy9mzhRKphon+ZQ==",
+  "success": true,
+  "projectFilePath": "/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/Area51/Area51.csproj",
+  "expectedPackageFiles": [
+    "/Users/markmarkov/.nuget/packages/microsoft.netcore.app.host.osx-x64/5.0.12/microsoft.netcore.app.host.osx-x64.5.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

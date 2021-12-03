@@ -1,0 +1,16 @@
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/Area51/bin/Debug/net5.0/Area51.deps.json
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/Area51/bin/Debug/net5.0/Area51.runtimeconfig.json
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/Area51/bin/Debug/net5.0/Area51.runtimeconfig.dev.json
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/Area51/bin/Debug/net5.0/Area51.dll
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/Area51/bin/Debug/net5.0/ref/Area51.dll
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/Area51/bin/Debug/net5.0/Area51.pdb
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/Area51/obj/Debug/net5.0/Area51.csproj.AssemblyReference.cache
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/Area51/obj/Debug/net5.0/Area51.GeneratedMSBuildEditorConfig.editorconfig
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/Area51/obj/Debug/net5.0/Area51.AssemblyInfoInputs.cache
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/Area51/obj/Debug/net5.0/Area51.AssemblyInfo.cs
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/Area51/obj/Debug/net5.0/Area51.csproj.CoreCompileInputs.cache
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/Area51/obj/Debug/net5.0/Area51.dll
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/Area51/obj/Debug/net5.0/ref/Area51.dll
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/Area51/obj/Debug/net5.0/Area51.pdb
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/Area51/obj/Debug/net5.0/Area51.genruntimeconfig.cache
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/Area51/bin/Debug/net5.0/Area51

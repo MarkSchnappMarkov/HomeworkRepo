@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShop", "OnlineShop\On
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebScrapper", "WebScrapper\WebScrapper.csproj", "{817CE86E-0CB1-4BC0-8337-6D54F03C3F2D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarSimulator", "BarSimulator\BarSimulator.csproj", "{1FCEC6A3-3721-48F5-939F-0C971A27A2E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Area51", "Area51\Area51.csproj", "{3CFC3185-5B7A-40FB-93B7-DD665AAA72BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{817CE86E-0CB1-4BC0-8337-6D54F03C3F2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{817CE86E-0CB1-4BC0-8337-6D54F03C3F2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{817CE86E-0CB1-4BC0-8337-6D54F03C3F2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FCEC6A3-3721-48F5-939F-0C971A27A2E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FCEC6A3-3721-48F5-939F-0C971A27A2E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FCEC6A3-3721-48F5-939F-0C971A27A2E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FCEC6A3-3721-48F5-939F-0C971A27A2E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CFC3185-5B7A-40FB-93B7-DD665AAA72BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CFC3185-5B7A-40FB-93B7-DD665AAA72BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CFC3185-5B7A-40FB-93B7-DD665AAA72BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CFC3185-5B7A-40FB-93B7-DD665AAA72BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

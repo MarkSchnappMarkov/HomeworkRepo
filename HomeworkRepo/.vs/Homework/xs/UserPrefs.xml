@@ -1,36 +1,35 @@
-﻿<Properties StartupConfiguration="{817CE86E-0CB1-4BC0-8337-6D54F03C3F2D}|Default">
+﻿<Properties StartupConfiguration="{3CFC3185-5B7A-40FB-93B7-DD665AAA72BD}|Default">
   <MonoDevelop.Ide.ItemProperties.OnlineShop PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebScrapper/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Area51/Program.cs">
     <Files>
-      <File FileName="WebScrapper/Program.cs" Line="30" Column="69" />
+      <File FileName="Area51/Elevator.cs" Line="21" Column="34" />
+      <File FileName="Area51/Base.cs" Line="33" Column="94" />
+      <File FileName="Area51/Program.cs" Line="21" Column="21" />
+      <File FileName="BarSimulator/Program.cs" Line="27" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Homework" expanded="True">
-            <Node name="BookHomework" expanded="True" />
-            <Node name="MultiThreadedBook" expanded="True" />
-            <Node name="OnlineShop" expanded="True" selected="True" />
-            <Node name="WebScrapper" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
-            </Node>
+            <Node name="Area51" expanded="True" selected="True" />
+            <Node name="BarSimulator" expanded="True" />
           </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>products</Value>
-        </State>
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.MultiThreadedBook PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.BarSimulator PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Area51 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.WebScrapper PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.BookHomework PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

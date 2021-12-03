@@ -1,12 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "q+t7BZycP1aNtnQub3lHwlPUu9Rk1qIA484PNBIo6WO+OrqJTeGEopyJzCW9FXKfj7u9lfXhCNEk1R8A0PPD+w==",
+  "dgSpecHash": "yFbjF6uYdFyPYRPQJzitM5vpAlK2g3khXYN6RaK0HsJ9wrAPDL6QayHUWNJRGE4YoQ2B9SpQ5R1nRGKz5a92SQ==",
   "success": true,
   "projectFilePath": "/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/OnlineShop/OnlineShop.csproj",
   "expectedPackageFiles": [
-    "/Users/markmarkov/.nuget/packages/microsoft.aspnetcore.app.ref/5.0.0/microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "/Users/markmarkov/.nuget/packages/microsoft.netcore.app.host.osx-x64/5.0.12/microsoft.netcore.app.host.osx-x64.5.0.12.nupkg.sha512",
-    "/Users/markmarkov/.nuget/packages/microsoft.netcore.app.ref/5.0.0/microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+    "/Users/markmarkov/.nuget/packages/microsoft.netcore.app.host.osx-x64/5.0.12/microsoft.netcore.app.host.osx-x64.5.0.12.nupkg.sha512"
   ],
   "logs": []
 }

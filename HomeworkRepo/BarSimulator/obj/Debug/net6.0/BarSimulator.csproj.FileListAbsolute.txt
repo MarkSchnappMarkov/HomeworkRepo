@@ -1,0 +1,15 @@
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/BarSimulator/bin/Debug/net6.0/BarSimulator
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/BarSimulator/bin/Debug/net6.0/BarSimulator.deps.json
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/BarSimulator/bin/Debug/net6.0/BarSimulator.runtimeconfig.json
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/BarSimulator/bin/Debug/net6.0/BarSimulator.dll
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/BarSimulator/bin/Debug/net6.0/ref/BarSimulator.dll
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/BarSimulator/bin/Debug/net6.0/BarSimulator.pdb
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/BarSimulator/obj/Debug/net6.0/BarSimulator.csproj.AssemblyReference.cache
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/BarSimulator/obj/Debug/net6.0/BarSimulator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/BarSimulator/obj/Debug/net6.0/BarSimulator.AssemblyInfoInputs.cache
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/BarSimulator/obj/Debug/net6.0/BarSimulator.AssemblyInfo.cs
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/BarSimulator/obj/Debug/net6.0/BarSimulator.csproj.CoreCompileInputs.cache
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/BarSimulator/obj/Debug/net6.0/BarSimulator.dll
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/BarSimulator/obj/Debug/net6.0/ref/BarSimulator.dll
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/BarSimulator/obj/Debug/net6.0/BarSimulator.pdb
+/Users/markmarkov/Documents/GitHub/HomeworkRepo/HomeworkRepo/BarSimulator/obj/Debug/net6.0/BarSimulator.genruntimeconfig.cache
